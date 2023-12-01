@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>MathML and SVG</title>
+
+    <script type="text/javascript" async
+
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+
+    </script>
+
+</head>
+
+<body>
+
+    <math>
+        <mrow>
+            <mi>Γ</mi>
+            <mfenced>
+                <mi>z</mi>
+            </mfenced>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+            <munderover>
+                <mo>&#8747;</mo>
+                <mn>0</mn>
+                <mn>&infin;</mn>
+            </munderover>
+            <mrow>
+                <msup>
+                    <mi>t</mi>
+                    <mrow>
+                        <mi>z</mi>
+                        <mo>-</mo>
+                        <mn>1</mn>
+                    </mrow>
+                </msup>
+                <msup>
+                    <mi>e</mi>
+                    <mrow>
+                        <mo>-</mo>
+                        <mi>t</mi>
+                    </mrow>
+                </msup>
+                <mi>d</mi>
+                <mi>t</mi>
+            </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+            <mfrac>
+                <mrow>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mo>-</mo>
+                            <mi>&gamma;</mi>
+                            <mi>z</mi>
+                        </mrow>
+                    </msup>
+                </mrow>
+                <mi>z</mi>
+            </mfrac>
+        </mrow>
+        <mrow>
+            <munderover>
+                <mo>&prod;</mo>
+                <mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow>
+                <mn>&infin;</mn>
+            </munderover>
+            <msup>
+                <mfenced>
+                    <mrow>
+                        <mn>1</mn>
+                        <mo>+</mo>
+                        <mfrac>
+                            <mi>z</mi>
+                            <mi>k</mi>
+                        </mfrac>
+                    </mrow>
+                </mfenced>
+                <mrow>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                </mrow>
+            </msup>
+            <msup>
+                <mi>e</mi> 
+                <mrow>
+                        <mi>z</mi>
+                        <mo>/</mo>
+                        <mi>k</mi>
+                </mrow>
+            </msup>           
+        </mrow>
+    </math>
+    
+    <p>
+        <svg height="300" width="300">
+            <ellipse cx="100" cy="55" rx="30" ry="45" stroke="black" stroke-width="2" fill="white" style="stroke-width:5" />
+            <line x1="60" y1="55" x2="140" y2="55" style="stroke:black;stroke-width:5" />
+            <line x1="100" y1="100" x2="100" y2="120" style="stroke:black;stroke-width:5" />
+            <line x1="80" y1="120" x2="120" y2="120" style="stroke:black;stroke-width:5" />
+
+        </svg>
+    </p>
+</body>
